@@ -3,12 +3,11 @@ name: check-ESlint
 on: [push]
 
 jobs: 
-  first-step-check-ESlint:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: launch-make-lint
-      run: 
-        make lint
+      run: make lint
     
     
     
