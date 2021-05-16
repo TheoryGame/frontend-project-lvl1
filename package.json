@@ -1,9 +1,12 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "type": "module",
   "description": "[![Actions Status](https://github.com/TheoryGame/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/TheoryGame/frontend-project-lvl1/actions)",
   "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +19,7 @@
   "bugs": {
     "url": "https://github.com/TheoryGame/frontend-project-lvl1/issues"
   },
-  "bin": {
-    "brain-games": "bin/brain-games.js"
-  },
+  "type": "module",
   "homepage": "https://github.com/TheoryGame/frontend-project-lvl1#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
