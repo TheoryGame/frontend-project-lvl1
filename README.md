@@ -6,4 +6,4 @@
 
 ![Check-ESlint-status](https://github.com/TheoryGame/frontend-project-lvl1/actions/workflows/check-eslint.yml/badge.svg)
 
-<script id="asciicast-v2vxYNywzwCwTrWNuKiNugyiU" src="https://asciinema.org/a/v2vxYNywzwCwTrWNuKiNugyiU.js" async></script>
+[![asciicast](https://asciinema.org/a/v2vxYNywzwCwTrWNuKiNugyiU.svg)](https://asciinema.org/a/v2vxYNywzwCwTrWNuKiNugyiU)
