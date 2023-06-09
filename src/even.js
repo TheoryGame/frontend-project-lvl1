@@ -18,9 +18,7 @@ export default function gameEven() {
     if (rigthAnswer === answerFromUser) {
       console.log('Correct!');
     } else {
-      return console.log(`'${answerFromUser}' is wrong answer ;(.\n
-Correct answer was '${rigthAnswer}'.\n
-Let's try again, Bill!`);
+      return console.log(`'${answerFromUser}' is wrong answer ;(.\n Correct answer was '${rigthAnswer}'. Let's try again, ${name}!`);
     }
   }
   return console.log(`Congratulations, ${name}`);
