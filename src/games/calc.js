@@ -1,4 +1,4 @@
-import {getRandomNum, startCurrentGame} from './index.js';
+import {getRandomNum, startCurrentGame} from '../index.js';
 
 const description = 'What is the result of the expression?';
 const getCalculated = (operandFirst, operator, operandSecond) => {
