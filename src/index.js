@@ -12,7 +12,7 @@ export const startCurrentGame = (descriptionForGame, dataForGame) => {
     const [rigthAnswer, dataForQuestion] = dataForGame();
 
     console.log(`Question: ${dataForQuestion}`);
-    const answerFromUser = readlineSync.question('Your answer: ')
+    const answerFromUser = readlineSync.question('Your answer: ');
 
     if (answerFromUser !== rigthAnswer) {
       return console.log(`'${answerFromUser}' is wrong answer ;(. Correct answer was '${rigthAnswer}'.\nLet's try again, ${getName}!`);
