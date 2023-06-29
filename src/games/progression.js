@@ -20,7 +20,7 @@ function generateProgression(startNum, lengthProgression, step) {
   return [progression, missingNumber];
 }
 
-const getDataForGame = () => {
+const getDataForGameFromProgression = () => {
   const startNum = getRandomNum(100);
   const lengthProgression = getRandomNum(6) + 5;
   const step = getRandomNum(10) + 1;
@@ -31,5 +31,5 @@ const getDataForGame = () => {
   return [rigthAnswer, dataForQuestion];
 };
 
-const startProgressionGame = () => startCurrentGame(description, getDataForGame);
+const startProgressionGame = () => startCurrentGame(description, getDataForGameFromProgression);
 export default startProgressionGame;

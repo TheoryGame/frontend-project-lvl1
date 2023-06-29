@@ -14,7 +14,7 @@ const getCalculated = (operandFirst, operator, operandSecond) => {
   }
 };
 
-const getDataForGame = () => {
+const getDataForGameFromCalc = () => {
   const operators = ['+', '-', '*'];
   const getRandomNum1 = getRandomNum(100);
   const getRandomNum2 = getRandomNum(100);
@@ -25,5 +25,5 @@ const getDataForGame = () => {
   return [rigthAnswer, dataForQuestion];
 };
 
-const startCalculationGame = () => startCurrentGame(description, getDataForGame);
+const startCalculationGame = () => startCurrentGame(description, getDataForGameFromCalc);
 export default startCalculationGame;

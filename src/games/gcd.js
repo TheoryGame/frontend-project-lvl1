@@ -9,7 +9,7 @@ const getGreatestCommonDivisor = (numFirst, numSecond) => {
   return getGreatestCommonDivisor(numSecond, numFirst % numSecond);
 };
 
-const getDataForGame = () => {
+const getDataForGameFromGcd = () => {
   const getRandomNumFirst = getRandomNum(100);
   const getRandomNumSecond = getRandomNum(100);
   const rigthAnswer = String(getGreatestCommonDivisor(getRandomNumFirst, getRandomNumSecond));
@@ -17,5 +17,5 @@ const getDataForGame = () => {
   return [rigthAnswer, dataForQuestion];
 };
 
-const startGcdGame = () => startCurrentGame(description, getDataForGame);
+const startGcdGame = () => startCurrentGame(description, getDataForGameFromGcd);
 export default startGcdGame;

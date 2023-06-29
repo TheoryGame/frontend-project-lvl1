@@ -14,12 +14,12 @@ const checkPrime = (num) => {
   return correctAnswer;
 };
 
-const getDataForGame = () => {
+const getDataForGameFromPrime = () => {
   const randomNum = getRandomNum(100);
   const rigthAnswer = checkPrime(randomNum);
   const dataForQuestion = `${randomNum}`;
   return [rigthAnswer, dataForQuestion];
 };
 
-const isPrime = () => startCurrentGame(description, getDataForGame);
+const isPrime = () => startCurrentGame(description, getDataForGameFromPrime);
 export default isPrime;
