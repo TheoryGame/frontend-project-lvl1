@@ -1,4 +1,4 @@
-import { getRandomNum, startCurrentGame } from '../index.js';
+import { random, startCurrentGame } from '../index.js';
 
 const description = 'What is the result of the expression?';
 const getCalculated = (operandFirst, operator, operandSecond) => {
@@ -14,16 +14,15 @@ const getCalculated = (operandFirst, operator, operandSecond) => {
   }
 };
 
-const getDataForGameFromCalc = () => {
+const generateDataRound = () => {
   const operators = ['+', '-', '*'];
-  const getRandomNum1 = getRandomNum(100);
-  const getRandomNum2 = getRandomNum(100);
-  const getRandomOperator = operators[getRandomNum(3)];
-  // Обернуть rigthAnswer в строку нужно, чтобы сравнить с вводом ответа юзера с === оператором.
-  const rigthAnswer = String(getCalculated(getRandomNum1, getRandomOperator, getRandomNum2));
-  const dataForQuestion = `${getRandomNum1}${getRandomOperator}${getRandomNum1}`;
+  const random1 = random(5);
+  const random2 = random(5);
+  const getRandomOperator = operators[random(3)];
+  const rigthAnswer = getCalculated(random1, getRandomOperator, random2);
+  const dataForQuestion = `${random1} ${getRandomOperator} ${random2}`;
   return [rigthAnswer, dataForQuestion];
 };
 
-const startCalculationGame = () => startCurrentGame(description, getDataForGameFromCalc);
+const startCalculationGame = () => startCurrentGame(description, generateDataRound);
 export default startCalculationGame;
